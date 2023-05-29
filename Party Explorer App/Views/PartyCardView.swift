@@ -12,10 +12,12 @@ struct PartyCardView: View {
     var body: some View {
         Image(party.bannerImage)
             .aspectRatio(contentMode: .fit)
+            .padding()
             .frame(width: 350, height: 200)
             .clipped()
             .cornerRadius(30)
             .overlay(LowerBannerView(party: party), alignment: .bottom)
+            .shadow(radius: 7)
     }
 }
 

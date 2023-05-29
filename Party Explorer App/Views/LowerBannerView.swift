@@ -33,7 +33,7 @@ struct LowerBannerView: View {
             .roundedCorner(30, corners: [.bottomLeft, .bottomRight])
             .foregroundColor(.init(red: 0, green: 0, blue: 0, opacity: 0.85))
             .overlay(
-                HStack {
+                HStack(alignment: .center) {
                     VStack(alignment: .leading) {
                         Text(party.name)
                             .font(.title2.bold())

@@ -13,6 +13,8 @@ struct PartyCardColumn: View {
     var body: some View {
         List(parties) {party in
             PartyCardView(party: party)
+                .listRowSeparator(.hidden)
+                .listRowBackground(Color.init(red: 0, green: 0, blue: 0, opacity: 0))
         }
     }
 }
