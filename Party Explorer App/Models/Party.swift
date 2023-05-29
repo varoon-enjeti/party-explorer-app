@@ -8,13 +8,13 @@
 import Foundation
 
 struct Party: Identifiable {
-    let id: UUID
+    let id: UUID        // for identifying in list
     var name: String
-    var bannerImage: String
+    var bannerImage: String     // used String because I was having issues converting from URL to Image
     var price: Double
     var attendance: Int
     var startDate: DateComponents
-    var endDate: DateComponents?
+    var endDate: DateComponents?    // optional
     
     init(id: UUID = UUID(), name: String, bannerImage: String, price: Double, attendance: Int, startDate: DateComponents, endDate: DateComponents? = nil) {
         self.id = id
