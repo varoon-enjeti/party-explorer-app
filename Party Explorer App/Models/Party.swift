@@ -30,6 +30,18 @@ struct Party: Identifiable {
 extension Party {
     static let sampleParties: [Party] =
     [
+        Party(name: "Varoon's Rager",
+              bannerImage: "varoons-rager",
+              price: 3,
+              attendance: 0,
+              startDate: DateComponents(year: 2023, month: 5, day: 31)
+             ),
+        Party(name: "House Party",
+              bannerImage: "house-party",
+              price: 5.50,
+              attendance: 34,
+              startDate: DateComponents(year: 2023, month: 6, day: 10)
+             ),
         Party(name: "Lollapalooza",
               bannerImage: "lollapalooza",
               price: 130,
@@ -43,18 +55,7 @@ extension Party {
               attendance: 1598,
               startDate: DateComponents(year: 2023, month: 8, day: 27),
               endDate: DateComponents(year: 2023, month: 9, day: 4)
-             ),
-        Party(name: "House Party",
-              bannerImage: "house-party",
-              price: 5.50,
-              attendance: 34,
-              startDate: DateComponents(year: 2023, month: 6, day: 10)
-             ),
-        Party(name: "Varoon's Rager",
-              bannerImage: "varoons-rager",
-              price: 3,
-              attendance: 0,
-              startDate: DateComponents(year: 2023, month: 5, day: 31))
+             )
     ]
 }
 

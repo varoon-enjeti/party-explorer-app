@@ -11,7 +11,7 @@ import SwiftUI
 struct Party_Explorer_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PartyCardColumn(parties: Party.sampleParties)
         }
     }
 }

@@ -24,7 +24,10 @@ extension View {
 }
 
 struct LowerBannerView: View {
+    let party: Party
+    
     var body: some View {
+        let nill: Bool = party.endDate == nil
         Rectangle()
             .frame(width: 350, height: 70)
             .roundedCorner(30, corners: [.bottomLeft, .bottomRight])
@@ -32,20 +35,18 @@ struct LowerBannerView: View {
             .overlay(
                 HStack {
                     VStack(alignment: .leading) {
-                        Text(Party.sampleParties[0].name)
+                        Text(party.name)
                             .font(.title2.bold())
-                        if Party.sampleParties[1].endDate == nil {
-                            Text("\(Party.sampleParties[0].startDate.month!)/\(Party.sampleParties[0].startDate.day!)/" + String(Party.sampleParties[0].startDate.year!))
-                                .font(.subheadline)
+                        if nill {
+                            Text("\(party.startDate.month!)/\(party.startDate.day!)/" + String(party.startDate.year!))
                         } else {
-                            Text("\(Party.sampleParties[0].startDate.month!)/\(Party.sampleParties[0].startDate.day!)/" + String(Party.sampleParties[0].startDate.year!) + " - ")
-                                .font(.subheadline)
+                            Text("\(party.startDate.month!)/\(party.startDate.day!)/" + String(party.startDate.year!) + " - \(party.endDate?.month! ?? 0)/\(party.endDate?.day! ?? 0)/" + String(party.endDate?.year! ?? 0))
                         }
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
-                        Label(String(format: "%.2f", Party.sampleParties[0].price), systemImage: "dollarsign.circle.fill")
-                        Label("\(Party.sampleParties[0].attendance)", systemImage: "person.fill")
+                        Label(String(format: "%.2f", party.price), systemImage: "dollarsign.circle.fill")
+                        Label("\(party.attendance)", systemImage: "person.fill")
                     }
                     .font(.subheadline)
                 }.padding()
@@ -54,7 +55,8 @@ struct LowerBannerView: View {
 }
 
 struct LowerBannerView_Previews: PreviewProvider {
+    static var party = Party.sampleParties[0]
     static var previews: some View {
-        LowerBannerView()
+        LowerBannerView(party: party)
     }
 }

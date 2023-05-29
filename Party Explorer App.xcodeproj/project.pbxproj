@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042F82EF2A2403A90089D807 /* Party_Explorer_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F82EE2A2403A90089D807 /* Party_Explorer_AppApp.swift */; };
+		042F82EF2A2403A90089D807 /* Party_Explorer_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F82EE2A2403A90089D807 /* Party_Explorer_App.swift */; };
 		042F82F12A2403A90089D807 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042F82F02A2403A90089D807 /* ContentView.swift */; };
 		042F82F32A2403AA0089D807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042F82F22A2403AA0089D807 /* Assets.xcassets */; };
 		042F82F62A2403AA0089D807 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042F82F52A2403AA0089D807 /* Preview Assets.xcassets */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		042F82EB2A2403A90089D807 /* Party Explorer App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Explorer App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		042F82EE2A2403A90089D807 /* Party_Explorer_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party_Explorer_AppApp.swift; sourceTree = "<group>"; };
+		042F82EE2A2403A90089D807 /* Party_Explorer_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party_Explorer_App.swift; sourceTree = "<group>"; };
 		042F82F02A2403A90089D807 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		042F82F22A2403AA0089D807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042F82F52A2403AA0089D807 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			children = (
 				042F82FD2A2406350089D807 /* Views */,
 				042F82FC2A24062B0089D807 /* Models */,
-				042F82EE2A2403A90089D807 /* Party_Explorer_AppApp.swift */,
+				042F82EE2A2403A90089D807 /* Party_Explorer_App.swift */,
 				042F82F02A2403A90089D807 /* ContentView.swift */,
 				042F82F22A2403AA0089D807 /* Assets.xcassets */,
 				042F82F42A2403AA0089D807 /* Preview Content */,
@@ -168,7 +168,7 @@
 				042F82F12A2403A90089D807 /* ContentView.swift in Sources */,
 				042F82FF2A2407A30089D807 /* Party.swift in Sources */,
 				042F83052A2436010089D807 /* PartyCardColumn.swift in Sources */,
-				042F82EF2A2403A90089D807 /* Party_Explorer_AppApp.swift in Sources */,
+				042F82EF2A2403A90089D807 /* Party_Explorer_App.swift in Sources */,
 				042F83012A2408290089D807 /* PartyCardView.swift in Sources */,
 				042F83032A24295D0089D807 /* LowerBannerView.swift in Sources */,
 			);
