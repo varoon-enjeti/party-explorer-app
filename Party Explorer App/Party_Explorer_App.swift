@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Party_Explorer_AppApp: App {
+    let myID: String = "test"
     var body: some Scene {
         WindowGroup {
             PartyCardColumn(parties: Party.sampleParties)

@@ -15,6 +15,7 @@ struct Party: Identifiable {
     var attendance: Int
     var startDate: DateComponents
     var endDate: DateComponents?    // optional
+    var userIDs: [String]
     
     init(id: UUID = UUID(), name: String, bannerImage: String, price: Double, attendance: Int, startDate: DateComponents, endDate: DateComponents? = nil) {
         self.id = id
@@ -24,6 +25,19 @@ struct Party: Identifiable {
         self.attendance = attendance
         self.startDate = startDate
         self.endDate = endDate
+        self.userIDs = []
+    }
+    
+    func dateString() -> String {
+        if endDate == nil {
+            return "\(startDate.month!)/\(startDate.day!)/" + String(startDate.year!)
+        } else {
+            return "\(startDate.month!)/\(startDate.day!)/" + String(startDate.year!) + " - \(endDate?.month! ?? 0)/\(endDate?.day! ?? 0)/" + String(endDate?.year! ?? 0)
+        }
+    }
+    
+    mutating func attend(userID: String) -> Void {
+        userIDs.append(userID)
     }
 }
 

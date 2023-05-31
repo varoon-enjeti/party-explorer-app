@@ -37,11 +37,12 @@ struct LowerBannerView: View {
                     VStack(alignment: .leading) {
                         Text(party.name)
                             .font(.title2.bold())
-                        if nill {
-                            Text("\(party.startDate.month!)/\(party.startDate.day!)/" + String(party.startDate.year!))
-                        } else {
-                            Text("\(party.startDate.month!)/\(party.startDate.day!)/" + String(party.startDate.year!) + " - \(party.endDate?.month! ?? 0)/\(party.endDate?.day! ?? 0)/" + String(party.endDate?.year! ?? 0))
-                        }
+                        Text(party.dateString())
+//                        if nill {
+//                            Text("\(party.startDate.month!)/\(party.startDate.day!)/" + String(party.startDate.year!))
+//                        } else {
+//                            Text("\(party.startDate.month!)/\(party.startDate.day!)/" + String(party.startDate.year!) + " - \(party.endDate?.month! ?? 0)/\(party.endDate?.day! ?? 0)/" + String(party.endDate?.year! ?? 0))
+//                        }
                     }
                     Spacer()
                     VStack(alignment: .trailing) {
